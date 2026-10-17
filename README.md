@@ -5,6 +5,6 @@
 
 ## 起動方法
 ```
-   ./vendor/bin/sail up -d
-   ./vendor/bin/sail artisan migrate
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan migrate
 ```
