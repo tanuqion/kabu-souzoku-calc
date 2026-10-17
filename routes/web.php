@@ -7,6 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/stocks/{code}/price', function (string $code) {
-    return  response()->json(['code' => $code, 'price' => 12345.6]);
+    return response()->json(['code' => $code, 'price' => 12345.6]);
 });
-
