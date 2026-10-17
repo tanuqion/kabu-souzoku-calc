@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('daily_stock_prices', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('stock_id')->constrained('stocks');
+            $table->foreignId('stock_id')->constrained();
             $table->date('price_date');
             $table->decimal('close_price', 10, 1);
             $table->unique(['stock_id', 'price_date']);
